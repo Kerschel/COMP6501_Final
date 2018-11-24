@@ -13,8 +13,9 @@ This is a cloud E-Learning platform designed for COMP 6905 - Cloud Technologies.
   * Navigate to the CloudFormation front end and view resources being created using the stackID.
 ![CloudFormation Stack ](CloudFormationStack.PNG)
 * Select the Resources Tab and select the VLSQLDB instance.
-* In the app.yml file replace the DATABASE_HOST with the endpoint url from the VLSQLDB instance
+* Scroll down until you see the endpoint url
  ![SQL DB endpoint](SQLDB_Endpoint.PNG)
+* In the app.yml file replace the DATABASE_HOST with the endpoint url.
 * run the command docker-compose  -H tcp://*EC2 Instance IP*:2375 -f app.yml up -d
 * To view the container made run the command docker  -H tcp://*EC2 Instance IP* ps -a
   ![SQL DB endpoint](SQLDB_Endpoint.PNG)
