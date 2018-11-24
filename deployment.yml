@@ -4,7 +4,7 @@ Resources:
     Properties:
       InstanceType: t2.micro
       ImageId: ami-059eeca93cf09eebd
-      KeyName: [KeyName]
+      KeyName: comp6501
       SecurityGroups:
         - !Ref VLNodeSG
       UserData: !Base64 |
