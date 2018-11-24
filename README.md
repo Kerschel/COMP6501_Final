@@ -1,7 +1,12 @@
 # E Learning Cloud Test platform
-This is a cloud E-Learning platform designed for COMP 6905 - Cloud Technologies. It was desinged by Andrew Singh, Kerschel James, 	Gerard Rique
+This is a cloud E-Learning platform designed for COMP 6905 - Cloud Technologies. It was desinged by:
+
+* Kerschel James
+* Gerard Rique
+* Andrew Singh
 
 # Instructions
+All the commands used in this is located in the commands.sh file for easy copying and referencing.
 * Clone or download the repository
 * Spin up the resources by doing the following:
   * Create a new Keypair on the EC2 Console (us-east-1)
@@ -23,3 +28,8 @@ This is a cloud E-Learning platform designed for COMP 6905 - Cloud Technologies.
   ![SQL DB endpoint](SQLDB_Endpoint.PNG)
 * Navigate to http://*EC2 Instance IP*:8080
   ![SQL DB endpoint](HomePage.PNG)
+
+# Clean up
+After running the instructions and testing the site to bring everything down use the following commands:
+* docker-compose -H tcp://*EC2 Instance IPv4*:2375 -f app.yml down
+* aws cloudformation delete-stack --stack-name ec2stack-*your name* --region us-east-1 
