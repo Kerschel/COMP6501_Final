@@ -29,6 +29,22 @@ All the commands used in this is located in the commands.sh file for easy copyin
 * Navigate to http://*EC2 Instance IP*:8080
   ![SQL DB endpoint](images/HomePage.PNG)
 
+# User setup
+* By Default an admin user is made, crednetials are:
+  * Username: admin@velearning.com
+  * Password: adminpw
+* To Login click Login and enter the necessary credentials
+![Login](images/Login.PNG)
+* To create a new User go to the Login Page and select create an account and enter the necesary fields. There is a choice between Teacher, Student for the Registration.
+![Register](images/Register.PNG)
+* The teacher will have the ability to increase their Plan or decrease it as necessary and view the history of their plans.
+![Teacher](images/Teacher Account.PNG)
+![Teacher Plan](images/Teacher Account Plan.PNG)
+![Teacher History](images/Teacher Account History.PNG)
+* Students will only see the personal information
+* Administrators will get a list of all the plans currently registered on the site.
+![Administration](images/Administration Account.PNG)
+
 # Clean up
 After running the instructions and testing the site if you wish to bring everything down use the following commands:
 * Clear up docker containers: docker-compose -H tcp://*EC2 Instance IPv4*:2375 -f app.yml down
