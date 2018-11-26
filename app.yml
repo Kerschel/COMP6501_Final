@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: princeandrew01/comp6901
+    image: princeandrew01/comp6905
     environment:
       DATABASE_HOST: [DATABSE_HOST]
       MYSQL_USER: admin
