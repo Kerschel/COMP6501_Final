@@ -39,8 +39,11 @@ All the commands used in this is located in the commands.sh file for easy copyin
 ![Register](images/Register.PNG)
 * The teacher will have the ability to increase their Plan or decrease it as necessary and view the history of their plans.
 ![Teacher](images/Teacher Account.PNG)
+
 ![Teacher Plan](images/Teacher Account Plan.PNG)
+
 ![Teacher History](images/Teacher Account History.PNG)
+
 * Students will only see the personal information
 * Administrators will get a list of all the plans currently registered on the site.
 ![Administration](images/Administration Account.PNG)
